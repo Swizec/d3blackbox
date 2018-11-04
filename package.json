@@ -1,6 +1,6 @@
 {
   "name": "d3blackbox",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "d3blackbox React component",
   "main": "lib/index.js",
   "module": "es/index.js",
