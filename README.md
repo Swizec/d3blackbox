@@ -80,7 +80,6 @@ const MyD3Component = ({ x, y }) => {
 ## With love ❤️
 
 Built with love by Swizec
-Cheers
 
 Only took me 2 years to get around to opensourcing this 😅
 

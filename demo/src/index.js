@@ -141,7 +141,7 @@ const MyD3Component = ({ x, y }) => {
                 <h2>With love ❤️</h2>
 
                 <p>
-                    Built by <a href="https://swize.com">Swizec</a>,<br />
+                    Built by <a href="https://swizec.com">Swizec</a>,<br />
                     Cheers ❤️
                 </p>
                 <p>
