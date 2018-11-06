@@ -3,12 +3,18 @@ import { render } from "react-dom";
 
 import Barchart from "./Barchart";
 import Recaman from "./Recaman";
+import styled from 'styled-components';
+
 import "./style.css";
+
+const Wrapper = styled.div`
+text-align: center;
+`
 
 class Demo extends Component {
     render() {
         return (
-            <div>
+            <Wrapper>
                 <h1>d3blackbox Demo</h1>
 
                 <p>
@@ -160,7 +166,7 @@ const MyD3Component = ({ x, y }) => {
                     It only took me 2 years to get around to opensourcing this.
                     😅
                 </p>
-            </div>
+            </Wrapper>
         );
     }
 }
