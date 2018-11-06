@@ -47,9 +47,8 @@ class Demo extends Component {
                 <h3>
                     2. Wrap D3 code in <code>D3blackbox</code>
                 </h3>
-                <p>
-                    <pre>
-                        {`
+                <pre>
+                    {`
 import React from "react";
 import D3blackbox from "d3blackbox";
 import * as d3 from "d3";
@@ -61,8 +60,7 @@ const Barchart = D3blackbox(function(anchor, props, state) {
 });
 
 export default Barchart;`}
-                    </pre>
-                </p>
+                </pre>
                 <h3>3. Render your component</h3>
                 <p>
                     <pre>{`
@@ -99,11 +97,10 @@ export default Barchart;`}
                     &lt;g&gt; element. You can change that with the{" "}
                     <code>component</code> prop.
                 </p>
-                <p>
-                    <pre>{`
+                <pre>{`
 <Barchart componenet="div" />
                     `}</pre>
-                </p>
+
                 <p>Make sure your renderer knows how to handle that.</p>
                 <p />
 
@@ -119,10 +116,37 @@ export default Barchart;`}
                         <Recaman x={10} y={10} width={800} height={400} />
                     </svg>
                 </p>
+                <pre>{`
+import { useD3 } from "d3blackbox";
+
+function renderSomeD3(anchor) {
+    d3.select(anchor);
+
+    // ...
+}
+
+const MyD3Component = ({ x, y }) => {
+    const refAnchor = useD3(anchor => renderSomeD3(anchor));
+
+    return <g ref={refAnchor} transform={\`translate(\${x}, \${y})\`} />;
+};
+                `}</pre>
+
+                <p>
+                    Think of that <code>renderSomeD3</code> call as a render
+                    prop. Use it to pass any props into your D3 render function
+                    as
+                </p>
+
+                <h2>With love ❤️</h2>
 
                 <p>
                     Built by <a href="https://swize.com">Swizec</a>,<br />
                     Cheers ❤️
+                </p>
+                <p>
+                    It only took me 2 years to get around to opensourcing this.
+                    😅
                 </p>
             </div>
         );

@@ -94,8 +94,6 @@ function recaman(svg, width, height) {
 const Recaman = ({ x, y, width, height }) => {
     const refAnchor = useD3(anchor => recaman(anchor, width, height));
 
-    console.log(refAnchor, x, y, width, height);
-
     return <g ref={refAnchor} transform={`translate(${x}, ${y})`} />;
 };
 

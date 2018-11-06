@@ -59,7 +59,23 @@ render() {
 
 ## HOCs are so September, do you have hooks?
 
-Yes.
+Yes. Hooks are alpha support and all that, but here's how you can use D3 blackbox as a React hook.
+
+```javascript
+import { useD3 } from "d3blackbox";
+
+function renderSomeD3(anchor) {
+    d3.select(anchor);
+
+    // ...
+}
+
+const MyD3Component = ({ x, y }) => {
+    const refAnchor = useD3(anchor => renderSomeD3(anchor));
+
+    return <g ref={refAnchor} transform={`translate(${x}, ${y})`} />;
+};
+```
 
 [npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
 [npm]: https://www.npmjs.org/package/npm-package
