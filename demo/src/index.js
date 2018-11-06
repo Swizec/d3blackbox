@@ -29,8 +29,8 @@ class Demo extends Component {
                     <a href="https://cdn.rawgit.com/mbostock/3885304/raw/a91f37f5f4b43269df3dbabcda0090310c05285d/index.html">
                         barchart from D3
                     </a>{" "}
-                    docs wrapped in a React component. Takes about 2 minutes to
-                    do from scratch.
+                    docs wrapped in a React component. Takes 2 minutes to do
+                    from scratch with any code you find. 👇
                 </p>
 
                 <svg width="800" height="250">
@@ -73,6 +73,24 @@ export default Barchart;`}
                         <Barchart x={10} y={10} width={300} height={200} />
                     </svg>
                 </p>
+
+                <h2>Codesandbox</h2>
+
+                <p>
+                    Here's a Codesandbox example, if you prefer to play around.
+                </p>
+
+                <iframe
+                    src="https://codesandbox.io/embed/9jm82v2lry"
+                    style={{
+                        width: 800,
+                        height: 500,
+                        border: 0,
+                        borderRadius: 4,
+                        overflow: "hidden"
+                    }}
+                    sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+                />
 
                 <h2>Use different anchor component</h2>
                 <p>
