@@ -34,6 +34,18 @@ class Demo extends Component {
                     from scratch with any code you find. 👇
                 </p>
 
+                <iframe
+                    src="https://codesandbox.io/embed/km3l21y60r"
+                    style={{
+                        width: 800,
+                        height: 500,
+                        border: 0,
+                        borderRadius: 4,
+                        overflow: "hidden"
+                    }}
+                    sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+                />
+
                 <svg width="800" height="250">
                     <Barchart x={10} y={10} width={300} height={200} />
                 </svg>
