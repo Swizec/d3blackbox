@@ -13,7 +13,14 @@ export default function D3blackbox(D3render) {
 
         render() {
             const { x, y } = this.props;
-            return <g transform={`translate(${x}, ${y})`} ref={this.anchor} />;
+            const Component = this.props.component || "g";
+
+            return (
+                <Component
+                    transform={`translate(${x}, ${y})`}
+                    ref={this.anchor}
+                />
+            );
         }
     };
 }
