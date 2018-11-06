@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { render } from "react-dom";
 
 import Barchart from "./Barchart";
+import Recaman from "./Recaman";
 import "./style.css";
 
 class Demo extends Component {
@@ -107,6 +108,17 @@ export default Barchart;`}
                 <p />
 
                 <h2>Use with React hooks</h2>
+
+                <p>
+                    React Hooks are still in alpha, but I know you're gonna ask.
+                    Yes, there's a hooks version <code>useD3</code>.
+                </p>
+
+                <p>
+                    <svg width="800" height="400">
+                        <Recaman x={10} y={10} width={800} height={400} />
+                    </svg>
+                </p>
 
                 <p>
                     Built by <a href="https://swize.com">Swizec</a>,<br />
