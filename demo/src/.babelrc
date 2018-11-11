@@ -1,0 +1,19 @@
+{
+    "plugins": [
+        [
+            "prismjs",
+            {
+                "languages": [
+                    "javascript",
+                    "css",
+                    "markup"
+                ],
+                "plugins": [
+                    "line-numbers"
+                ],
+                "theme": "solarized-light",
+                "css": true
+            }
+        ]
+    ]
+}

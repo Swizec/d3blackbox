@@ -19,7 +19,9 @@
         "test:watch": "nwb test-react --server"
     },
     "dependencies": {
+        "babel-plugin-prismjs": "^1.0.2",
         "d3": "^5.7.0",
+        "prismjs": "^1.15.0",
         "styled-components": "^4.0.3"
     },
     "peerDependencies": {
