@@ -8,6 +8,8 @@ import Logo from './images/BBLogo.png'
 import "./style.css";
 import Prism from 'prismjs';
 import "./prism.css";
+import { Helmet } from 'react-helmet';
+
 
 
 const Wrapper = styled.div`
@@ -155,7 +157,30 @@ class Demo extends Component {
       }
     render() {
         return (
-            <Wrapper>
+        <Wrapper>
+            <div>
+                <Helmet>
+                <title>D3 BLACKBOX</title>
+                <meta name="description" content="Take any D3 example you find in the wild and wrap it in a React component. Great for quick experiments and meeting deadlines. 😛" />
+                <meta itemprop="name" content="D3 BLACKBOX"></meta>
+                <meta itemprop="description" content="Take any D3 example you find in the wild and wrap it in a React component. Great for quick experiments and meeting deadlines. 😛"/>
+                <meta itemprop="image" content="https://ibb.co/mmZdaA"/>
+
+                
+                <meta property="og:url" content="https://shawnhosea.com"/>
+                <meta property="og:type" content="website"/>
+                <meta property="og:title" content="D3 BLACKBOX"/>
+                <meta property="og:description" content="Take any D3 example you find in the wild and wrap it in a React component. Great for quick experiments and meeting deadlines. 😛"/>
+                <meta property="og:image" content="https://ibb.co/mmZdaA"/>
+            
+                
+                <meta name="twitter:card" content="summary_large_image"></meta>
+                <meta name="twitter:title" content="D3 BLACKBOX"/>
+                <meta name="twitter:description" content="Take any D3 example you find in the wild and wrap it in a React component. Great for quick experiments and meeting deadlines. 😛"/>
+                <meta name="twitter:image" content="https://ibb.co/mmZdaA"/>
+                </Helmet>
+                {/* ... */}
+            </div>
                 <WrapperHero>
                     <h1>D3 BLACKBOX</h1>
                     <img src={Logo} height='300px' alt='hero'/>
