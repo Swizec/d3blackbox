@@ -1,43 +1,44 @@
 {
-    "name": "d3blackbox",
-    "version": "1.0.0",
-    "description": "d3blackbox React component",
-    "main": "lib/index.js",
-    "module": "es/index.js",
-    "files": [
-        "css",
-        "es",
-        "lib",
-        "umd"
-    ],
-    "scripts": {
-        "build": "nwb build-react-component",
-        "clean": "nwb clean-module && nwb clean-demo",
-        "start": "nwb serve-react-demo",
-        "test": "nwb test-react",
-        "test:coverage": "nwb test-react --coverage",
-        "test:watch": "nwb test-react --server"
-    },
-    "dependencies": {
-        "babel-plugin-prismjs": "^1.0.2",
-        "d3": "^5.7.0",
-        "prismjs": "^1.15.0",
-        "react-helmet": "^5.2.0",
-        "styled-components": "^4.0.3"
-    },
-    "peerDependencies": {
-        "react": "16.x"
-    },
-    "devDependencies": {
-        "nwb": "0.21.x",
-        "react": "next",
-        "react-dom": "next"
-    },
-    "author": "",
-    "homepage": "",
-    "license": "MIT",
-    "repository": "",
-    "keywords": [
-        "react-component"
-    ]
+  "name": "gatsby-starter-default",
+  "description": "Gatsby default starter",
+  "version": "1.0.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "babel-plugin-prismjs": "^1.0.2",
+    "babel-plugin-styled-components": "^1.8.0",
+    "d3": "^5.7.0",
+    "d3blackbox": "^1.0.0",
+    "gatsby": "^2.0.19",
+    "gatsby-image": "^2.0.15",
+    "gatsby-plugin-manifest": "^2.0.5",
+    "gatsby-plugin-offline": "^2.0.11",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sharp": "^2.0.7",
+    "gatsby-plugin-styled-components": "^3.0.1",
+    "gatsby-source-filesystem": "^2.0.4",
+    "gatsby-transformer-sharp": "^2.1.4",
+    "prismjs": "^1.15.0",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^4.1.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  }
 }
