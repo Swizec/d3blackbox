@@ -18,22 +18,22 @@
         "test:coverage": "nwb test-react --coverage",
         "test:watch": "nwb test-react --server"
     },
-    "dependencies": {
-        "babel-plugin-prismjs": "^1.0.2",
-        "d3": "^5.7.0",
-        "prismjs": "^1.15.0",
-        "styled-components": "^4.0.3"
-    },
+    "dependencies": {},
     "peerDependencies": {
-        "react": "16.x"
+        "react": "16.x",
+        "typescript": "^3.5.2"
     },
     "devDependencies": {
+        "babel-plugin-prismjs": "^1.0.2",
+        "d3": "^5.9.2",
         "nwb": "0.21.x",
+        "prismjs": "^1.16.0",
         "react": "next",
-        "react-dom": "next"
+        "react-dom": "next",
+        "styled-components": "^4.3.1"
     },
-    "author": "",
-    "homepage": "",
+    "author": "Swizec Teller",
+    "homepage": "https://d3blackbox.com/",
     "license": "MIT",
     "repository": "",
     "keywords": [
