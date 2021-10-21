@@ -37,7 +37,10 @@
     "author": "Swizec Teller",
     "homepage": "https://d3blackbox.com/",
     "license": "MIT",
-    "repository": "",
+    "repository": {	
+        "type": "git",
+        "url": "https://github.com/Swizec/d3blackbox.git"
+    },
     "keywords": [
         "react-component"
     ]
